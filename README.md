@@ -30,6 +30,13 @@ cd src
 dotnet watch run
 ```
 
+## Run in Docker
+
+```
+docker build -t src .
+docker run -p 5000:5000 IO.Swagger
+```
+
 ## Update database schema
 
 Run ```dotnet ef migrations add MyFirstMigration``` to scaffold a migration to create the initial set of tables for your model.
